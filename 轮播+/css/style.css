@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+#picbox {
+    width: 1226px;
+    height: 460px;
+    overflow: hidden;
+    margin: 60px auto;
+    position: relative;
+}
+.piclist {
+    width: 30000px;
+    height: 460px;
+    position: absolute;
+}
+.piclist li {
+    float: left;
+}
+#circle {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    left: 500px;
+    bottom: 20px;
+}
+#circle li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #999;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer;
+}
+.selected {
+    background-color: #333!important;
+}
+.pre,
+.next {
+    width: 30px;
+    height: 80px;
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    top: 40%;
+    background-color: #9f9f9f;
+    cursor: pointer;
+    opacity: 0.3;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.pre {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.pre:hover,
+.next:hover {
+    opacity: 0.8;
+}
+
+/*解决上一页、下一页多次点击后蓝色背景bug*/
+
+.unselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*解决上一页、下一页多次点击后蓝色背景bug*/
+
+#fu li {
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+#fu li:first-child {
+    top: 120px;
+    left: 200px;
+}
+#fu li:nth-child(2) {
+    top: 140px;
+    left: 500px;
+}
+#fu li:nth-child(3) {
+    top: 215px;
+    left: 200px;
+}
+#fu li:nth-child(4) {
+    top: 140px;
+    left: 500px;
+}
+#fu li:nth-child(5) {
+    bottom: 0px;
+    right: 0px;
+}
+#fu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*祝大家新年快乐^o^*/

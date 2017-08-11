@@ -1,0 +1,472 @@
+@charset "UTF-8";
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clear:after{
+  clear: both;
+}
+
+.hide{
+  display: none;
+}
+
+body{
+  background: #f06060;
+  font: 12px/1.5 '微软雅黑';
+  overflow:auto;overflow-x:hidden;
+}
+
+.page{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom:0;
+  left:0;
+}
+
+#loading{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+#loading .loadingText{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#index{
+  text-align:center;
+}
+
+#index h1{
+  font-size: 30px;
+  padding: 60px 0;
+  color: white;
+  text-shadow: 1px 1px 1px #ab3c3c;
+}
+
+#index .point{
+  color: #ffa1a1;
+  font-size: 16px;
+}
+
+#index .btns{
+  width: 100%;
+  height:210px;
+  position: absolute;
+  bottom: 20px;
+}
+
+#index .btn{
+  width: 220px;
+  height: 50px;
+  border:none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 20px 30px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+#index .btns .modeOne{
+  background:#fcad26 ;
+  -webkit-box-shadow: 0 5px #da9622;
+  -moz-box-shadow: 0 5px #da9622;
+  box-shadow: 0 5px #da9622;
+}
+
+#index .btns .modeTwo{
+  background:#5cbcf6 ;
+  box-shadow: 0 5px #009acd;
+  -webkit-box-shadow: 0 5px #009acd;
+  -moz-box-shadow: 0 5px #009acd;
+  -o-box-shadow: 0 5px #009acd;
+}
+
+#room header{
+  position: absolute;
+  width:80px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#room header span{
+  display:block;
+}
+
+#room header span em{
+  font-style: normal;
+}
+
+#room header span.score{
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff0f5;
+}
+
+#room header span.time{
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color:#fd9090;
+  color:#ffcaca;
+  text-align: center;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom:60px;
+  left: 0;
+  margin: auto;
+}
+
+#room header span.btn{
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  width: 70px;
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  background: #fcad26;
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px #da9622;
+  -webkit-box-shadow: 0 5px #da9622 ;
+  -moz-box-shadow:  0 5px #da9622 ;
+  -o-box-shadow:  0 5px #da9622 ;
+}
+
+#box{
+  width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ddd;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 40px;
+  margin: auto;
+}
+
+#box span{
+  display: inline-block;
+  border-radius: 10px;
+  background-color:white ;
+  cursor: pointer;
+  float: left;
+  border:5px solid #ddd;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#box.lv2 span{width:50%;height:50%}
+#box.lv3 span{width:33.33%;height:33.33%}
+#box.lv4 span{width:25%;height:25%}
+#box.lv5 span{width:20%;height:20%;border-width:3px}
+#box.lv6 span{width:16.666%;height:16.666%;border-width:3px}
+#box.lv7 span{width:14.28%;height:14.28%;border-width:3px}
+#box.lv8 span{width:12.5%;height:12.5%;border-width:3px}
+#box.lv9 span{width:11.111%;height:11.111%;border-width:3px}
+#box.lv10 span{width:10%;height:10%;border-width:3px}
+
+
+#popup{
+  width: 100%;
+  height: 100%;
+  background: #a74343;
+}
+
+#popup .stop, .ending{
+  width: 60%;
+  height: 300px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom:0;
+  left: 0;
+  margin: auto;
+}
+
+#popup .stop h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffe2c5;
+}
+
+#popup .btn_wrap{
+  margin: 0 auto;
+}
+
+#popup .btn_wrap button{
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color:#fcad26 ;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow:0 5px #da9622;
+  -moz-box-shadow:0 5px #da9622;
+  box-shadow:0 5px #da9622;
+}
+
+#popup .continue, .again , .modeTwo{
+  width: 100px;
+  height: 52px;
+  margin:20px 10px;
+  cursor: pointer;
+}
+
+#popup .moreGame{
+  width: 220px;
+  height: 50px;
+}
+
+#popup .ending h3{
+  font-size: 40px;
+  color: #332211;
+}
+
+#music_bg {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: auto;
+  right: 40px;
+  cursor: pointer;
+}
+#music_bg .move{
+  width: 100%;
+  height:100%;
+  position: absolute;
+
+}
+
+#music_bg .play{
+  -webkit-animation: music_move 4s linear infinite;
+       -o-animation: music_move 4s linear infinite;
+          animation: music_move 4s linear infinite;
+}
+
+@-webkit-keyframes music_move {
+   0%{
+     -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+   }
+   100%{
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+ }
+
+@-o-keyframes music_move {
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes music_move {
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-device-width:769px){
+    #loading .loadingText{
+      font-size: 240%
+    }
+
+    #index h1{
+      font-size: 400%;
+      padding: 200px 0;
+    }
+
+    #index .point{
+      font-size: 300%
+    }
+
+    #index .btns{
+      bottom: 10%;
+    }
+
+    #index .btn{
+      width: 300px;
+      height: 70px;
+    }
+
+    #room header{
+      width: 100%;
+      height: 10%;
+    }
+
+    #room header span.score ,#room header span.time ,#room header span.btn{
+      top: 20px;
+    }
+
+  #room header span.score{
+    position: absolute;
+    left: 20px;
+    font-size: 300%;
+  }
+
+  #room header span.time{
+    width: 160px;
+    height:60px;
+    line-height: 60px;
+    border-radius: 20px;
+    font-size: 360%;
+    margin: 0 auto;
+  }
+
+  #room header span.btn{
+    position: absolute;
+    left: auto;
+    right: 20px;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 260%;
+  }
+
+  #box{
+    width: 80%;
+    left: 0;
+    border-radius: 20px;
+  }
+
+
+  #popup .continue, .again, .modeTwo{
+    width: 200px;
+    height: 80px;
+    margin:40px 20px;
+  }
+
+  #popup .moreGame{
+    width: 440px;
+    height: 80px;
+  }
+
+  #popup .btn_wrap button{
+    font-size: 36px;
+  }
+
+  #music_bg{
+    width: 80px;
+    height:80px;
+    top:100px;
+  }
+
+}
+
+@media (max-width:769px){   /*浏览器窗口小于769px时*/
+  #loading .loadingText{
+    font-size: 100%
+  }
+
+  #index h1{
+    font-size: 160%;
+    padding: 100px 0;
+  }
+
+  #index .point{
+    font-size: 120%
+  }
+
+  #index .btns{
+    bottom: 10%;
+  }
+
+  #index .btn{
+    width: 180px;
+    height: 40px;
+  }
+
+  #room header{
+    width: 100%;
+    height: 10%;
+  }
+
+  #room header span.score ,#room header span.time ,#room header span.btn{
+    top: 20px;
+  }
+
+  #room header span.score{
+    position: absolute;
+    line-height: 36px;
+    left: 20px;
+    font-size: 160%;
+  }
+
+  #room header span.time{
+    width: 80px;
+    height:36px;
+    line-height: 36px;
+    border-radius: 10px;
+    font-size: 160%;
+    margin: 0 auto;
+  }
+
+  #room header span.btn{
+    position: absolute;
+    left: auto;
+    right: 20px;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 160%;
+  }
+
+  #box{
+    width: 56%;
+    left: 0;
+    top: auto;
+    bottom:10%;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+
+
+}
+
+
+

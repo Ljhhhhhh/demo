@@ -1,0 +1,18 @@
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active {
+    color: #f20b0b;
+    background-color: ;
+}
+#about header{background-color: antiquewhite;}
+#photos header{background-color:aqua;}
+#live header{background-color: #5907f5;}
+#contact header{background-color: #ffee23;}
+
+#slideshow{width: 150px;height: 150px;position: relative;overflow: hidden;}
+#preview{position: absolute;border-width: 0;outline-width: 0px;}
+
+#frame{position: absolute;top: 0px;left: 0px;z-index: 99;}
+
+input.placeholder{color:grey;}
